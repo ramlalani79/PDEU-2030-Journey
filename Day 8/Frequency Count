@@ -1,0 +1,11 @@
+nums  =[5,6,7,8,2,2,3,3,4,4,5,5,6,6,]
+
+feq_map = dict()
+
+for i in range(len(nums)):
+    if nums[i] in feq_map:
+         feq_map[nums[i]] +=1
+    else:
+         feq_map[nums[i]] = 1
+
+print(feq_map)
