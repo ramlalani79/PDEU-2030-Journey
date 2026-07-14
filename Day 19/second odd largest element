@@ -1,0 +1,17 @@
+arr = [10, 5, 7, 9, 3, 11, 8]
+
+largest = float('-inf')
+second = float('-inf')
+
+for num in arr:
+    if num % 2 != 0:  # Odd number
+        if num > largest:
+            second = largest
+            largest = num
+        elif num > second and num != largest:
+            second = num
+
+if second == float('-inf'):
+    print("Second largest odd number not found")
+else:
+    print("Second Largest Odd Number =", second) 
