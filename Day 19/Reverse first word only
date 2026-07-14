@@ -1,0 +1,8 @@
+s = "Python is fun"
+
+word = s.split()
+word[0]= word[0][::-1]
+
+result = " ".join(word)
+print(result)
+
